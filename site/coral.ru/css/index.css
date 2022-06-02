@@ -998,9 +998,44 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
     height: 100%;
   }
 }
+#site-wrap section .destinations-list .destination.uae-excursions .visual {
+  position: relative;
+  background-image: url(../iii/visual-uae-excursions-desktop.jpg);
+  border-radius: 2.5em;
+}
+#site-wrap section .destinations-list .destination.uae-excursions .visual:before {
+  content: '';
+  display: block;
+  padding-top: 32.93413174%;
+}
+#site-wrap section .destinations-list .destination.uae-excursions .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.uae-excursions .visual {
+    position: relative;
+    background-image: url(../iii/visual-uae-excursions-mobile.jpg);
+  }
+  #site-wrap section .destinations-list .destination.uae-excursions .visual:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+  #site-wrap section .destinations-list .destination.uae-excursions .visual > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 #site-wrap section .destinations-list .destination.uae-excursions-tickets .visual {
   position: relative;
-  background-image: url(../iii/visual-uae-excursions-tickets-desktop.jpg);
+  background-image: url(../iii/visual-uae-excursions-tickets-2-desktop.jpg);
   border-radius: 2.5em;
 }
 #site-wrap section .destinations-list .destination.uae-excursions-tickets .visual:before {
@@ -1018,7 +1053,7 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 @media screen and (max-width: 768px) {
   #site-wrap section .destinations-list .destination.uae-excursions-tickets .visual {
     position: relative;
-    background-image: url(../iii/visual-uae-excursions-tickets-mobile.jpg);
+    background-image: url(../iii/visual-uae-excursions-tickets-2-mobile.jpg);
   }
   #site-wrap section .destinations-list .destination.uae-excursions-tickets .visual:before {
     content: '';
