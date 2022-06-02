@@ -1,0 +1,979 @@
+.reset {
+  position: static;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  background: none;
+}
+.bbox,
+.bbox * {
+  box-sizing: border-box;
+}
+.interactive {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.interactive:active {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+}
+.abs100x100 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.centering {
+  display: table !important;
+  width: 100%;
+  height: 100%;
+}
+.centering > *:first-child {
+  width: 100%;
+  height: 100%;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.centering > *:first-child > *:first-child {
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .hidden-on-mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hidden-on-desktop {
+    display: none !important;
+  }
+}
+.rur:not(:empty):after {
+  content: ' \20BD ';
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#site-wrap,
+#site-wrap * {
+  box-sizing: border-box;
+}
+#site-wrap section + section {
+  margin-top: 3%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section + section {
+    margin-top: 10%;
+  }
+}
+#site-wrap section > .contenu {
+  max-width: 1370px;
+  margin: auto;
+  padding: 1rem;
+  font-size: 1.1vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 1440px) {
+  #site-wrap section > .contenu {
+    max-width: 1130px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  #site-wrap section > .contenu {
+    font-size: 15.84px;
+  }
+}
+#site-wrap section > .contenu > * {
+  max-width: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section > .contenu {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 576px) {
+  #site-wrap section > .contenu {
+    font-size: 1.3em;
+  }
+}
+#site-wrap section > .contenu h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 3em;
+  max-width: 20em;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section > .contenu h2 {
+    font-size: 2.6em;
+    padding: 0 0.5em;
+  }
+}
+@media screen and (max-width: 576px) {
+  #site-wrap section > .contenu h2 {
+    font-size: 2em;
+  }
+}
+#site-wrap section > .contenu h3 {
+  text-align: center;
+  font-size: 2em;
+}
+#site-wrap section > .contenu ul li:before,
+#site-wrap section > .contenu ul li:after {
+  display: none;
+}
+#site-wrap section > .contenu .buttonlike {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  font-size: inherit;
+  height: 2.6em;
+  padding: 0 2em;
+  border: 0;
+  text-decoration: none;
+  border-radius: 0.5em;
+}
+#site-wrap section > .contenu .buttonlike:active {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+}
+#site-wrap section > .contenu .buttonlike.transparent {
+  color: inherit;
+  border: 1px solid currentColor;
+}
+#site-wrap section > .contenu .buttonlike.yellow {
+  color: white;
+  background-color: #F0AB00;
+}
+#site-wrap section > .contenu .buttonlike.yellow.hollow {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #F0AB00;
+  color: black;
+}
+#site-wrap section > .contenu .buttonlike.blue {
+  color: white;
+  background-color: #0093D0;
+}
+#site-wrap section > .contenu .buttonlike.deepblue {
+  color: white;
+  background-color: #0F2855;
+}
+#site-wrap section > .contenu .buttonlike.red {
+  color: white;
+  background-color: #D7232A;
+}
+#site-wrap section > .contenu .buttonlike.red.hollow {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 2px #D7232A;
+  color: black;
+}
+body .contentLayout-BaseContainer {
+  max-width: 100%;
+  overflow: hidden;
+}
+body .contentLayout-BaseContainer .notcritical {
+  padding: 0!important;
+}
+body .contentLayout-BaseContainer .notcritical > .container {
+  margin: 0!important;
+  padding: 0!important;
+  max-width: none!important;
+}
+body .contentLayout-BaseContainer .notcritical > .container .widgetcontainer {
+  margin-bottom: 0;
+}
+body .contentLayout-BaseContainer .notcritical > .container > .row:not(:nth-child(2)) {
+  display: none;
+}
+body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2) > div.col-sm-12.order-1.col-md-9.rightcol > h1 {
+  display: none;
+}
+#site-wrap {
+  background-color: white;
+}
+#site-wrap section.intro > .contenu {
+  position: relative;
+  background: url("../iii/section-intro-8-desktop.jpg") center no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+#site-wrap section.intro > .contenu:before {
+  content: '';
+  display: block;
+  padding-top: 33.2361516%;
+}
+#site-wrap section.intro > .contenu > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.intro > .contenu {
+    position: relative;
+    background-image: url(../iii/section-intro-8-mobile.jpg);
+  }
+  #site-wrap section.intro > .contenu:before {
+    content: '';
+    display: block;
+    padding-top: 161.38888889%;
+  }
+  #site-wrap section.intro > .contenu > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section.c2a {
+  margin-bottom: -3%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.c2a {
+    margin-bottom: -5%;
+  }
+}
+#site-wrap section.c2a > .contenu {
+  align-items: center;
+  text-align: center;
+}
+#site-wrap section.c2a > .contenu p {
+  max-width: 50em;
+  margin-bottom: 0;
+}
+#site-wrap section.c2a > .contenu p.strong {
+  font-weight: bold;
+}
+#site-wrap section.c2a > .contenu p + p {
+  margin-top: 1em;
+}
+#site-wrap section.destinations > .contenu {
+  width: 100%;
+}
+#site-wrap section.destinations > .contenu .selector {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#site-wrap section.destinations > .contenu .selector [data-show] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  margin: 0.5em;
+  flex: 1 1 auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1;
+  height: 3em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  background-color: #BDBDBD;
+  color: white;
+  -webkit-transition: color 0.5s, background-color 0.5s;
+  -moz-transition: color 0.5s, background-color 0.5s;
+  -ms-transition: color 0.5s, background-color 0.5s;
+  -o-transition: color 0.5s, background-color 0.5s;
+  transition: color 0.5s, background-color 0.5s;
+}
+#site-wrap section.destinations > .contenu .selector [data-show]:active {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+}
+#site-wrap section.destinations > .contenu .selector [data-show].selected {
+  pointer-events: none;
+  background-color: #D7232A;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.destinations > .contenu .selector [data-show].selected {
+    pointer-events: auto;
+    background-color: #BDBDBD;
+    color: white;
+  }
+}
+#site-wrap section.destinations > .contenu .content-blocks {
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  #site-wrap section.destinations > .contenu .content-blocks [data-content-for] {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.destinations > .contenu .content-blocks [data-content-for] {
+    display: block!important;
+  }
+  #site-wrap section.destinations > .contenu .content-blocks [data-content-for]:nth-child(n+2) {
+    margin-top: 15%;
+  }
+}
+#site-wrap section.destinations > .contenu .content-blocks h2 {
+  max-width: none;
+  margin-top: 1em;
+}
+#site-wrap section.destinations > .contenu .content-blocks h2 + p {
+  font-size: 1.5em;
+  font-weight: normal;
+  text-align: center;
+  margin-top: -1em;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section.accomodation-only {
+    display: none;
+  }
+}
+#site-wrap section.message-us > .contenu .messengers {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+#site-wrap section.message-us > .contenu .messengers a {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  width: 6em;
+  max-width: 80px;
+  background: center no-repeat;
+  background-size: contain;
+  margin: 0 1.5em;
+}
+#site-wrap section.message-us > .contenu .messengers a:active {
+  -webkit-transform: translateY(2px);
+  -moz-transform: translateY(2px);
+  -ms-transform: translateY(2px);
+  -o-transform: translateY(2px);
+  transform: translateY(2px);
+}
+#site-wrap section.message-us > .contenu .messengers a:before {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+#site-wrap section.message-us > .contenu .messengers a > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#site-wrap section.offers {
+  background-color: #EFEFEF;
+  padding: 5% 0;
+}
+#site-wrap section.offers > .contenu .actions {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#site-wrap section .destinations-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#site-wrap section .destinations-list.one .destination {
+  flex: 1 0 100%;
+}
+#site-wrap section .destinations-list.one .destination:nth-child(n+2) {
+  margin-top: 2em;
+}
+#site-wrap section .destinations-list.one .destination .visual {
+  position: relative;
+  background: center no-repeat;
+  background-size: cover;
+}
+#site-wrap section .destinations-list.one .destination .visual:before {
+  content: '';
+  display: block;
+  padding-top: 29.15451895%;
+}
+#site-wrap section .destinations-list.one .destination .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list.one .destination .visual {
+    position: relative;
+  }
+  #site-wrap section .destinations-list.one .destination .visual:before {
+    content: '';
+    display: block;
+    padding-top: 75.98784195%;
+  }
+  #site-wrap section .destinations-list.one .destination .visual > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section .destinations-list.two .destination {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list.two .destination {
+    width: 100%;
+  }
+  #site-wrap section .destinations-list.two .destination:nth-child(n+2) {
+    margin-top: 2em;
+  }
+}
+#site-wrap section .destinations-list.two .destination .visual {
+  position: relative;
+  background: center no-repeat;
+  background-size: cover;
+}
+#site-wrap section .destinations-list.two .destination .visual:before {
+  content: '';
+  display: block;
+  padding-top: 48.57142857%;
+}
+#site-wrap section .destinations-list.two .destination .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#site-wrap section .destinations-list.three .destination {
+  width: 33.33333333%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list.three .destination {
+    width: 100%;
+  }
+  #site-wrap section .destinations-list.three .destination:nth-child(n+2) {
+    margin-top: 2em;
+  }
+}
+#site-wrap section .destinations-list.three .destination .visual {
+  position: relative;
+  background: center no-repeat;
+  background-size: cover;
+}
+#site-wrap section .destinations-list.three .destination .visual:before {
+  content: '';
+  display: block;
+  padding-top: 76%;
+}
+#site-wrap section .destinations-list.three .destination .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#site-wrap section .destinations-list.four .destination {
+  width: 25%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list.four .destination {
+    width: 50%;
+  }
+  #site-wrap section .destinations-list.four .destination:nth-child(n+3) {
+    margin-top: 2em;
+  }
+}
+#site-wrap section .destinations-list.four .destination .visual {
+  position: relative;
+  background: center no-repeat;
+  background-size: cover;
+}
+#site-wrap section .destinations-list.four .destination .visual:before {
+  content: '';
+  display: block;
+  padding-top: 75%;
+}
+#site-wrap section .destinations-list.four .destination .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+#site-wrap section .destinations-list .destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5em;
+  color: inherit;
+}
+#site-wrap section .destinations-list .destination > * {
+  max-width: 100%;
+}
+#site-wrap section .destinations-list .destination.antalia .visual {
+  background-image: url(../iii/visual-antalia-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.antalia .visual {
+    background-image: url(../iii/visual-antalia-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.turkey .visual {
+  position: relative;
+  background-image: url(../iii/visual-turkey-3-desktop.jpg);
+}
+#site-wrap section .destinations-list .destination.turkey .visual:before {
+  content: '';
+  display: block;
+  padding-top: 29.15451895%;
+}
+#site-wrap section .destinations-list .destination.turkey .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.turkey .visual {
+    position: relative;
+    background-image: url(../iii/visual-turkey-3-mobile.jpg);
+  }
+  #site-wrap section .destinations-list .destination.turkey .visual:before {
+    content: '';
+    display: block;
+    padding-top: 143.46504559%;
+  }
+  #site-wrap section .destinations-list .destination.turkey .visual > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section .destinations-list .destination.turkey-aegean .visual {
+  position: relative;
+  background-image: url(../iii/visual-turkey-aegean-desktop.jpg);
+}
+#site-wrap section .destinations-list .destination.turkey-aegean .visual:before {
+  content: '';
+  display: block;
+  padding-top: 29.15451895%;
+}
+#site-wrap section .destinations-list .destination.turkey-aegean .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.turkey-aegean .visual {
+    position: relative;
+    background-image: url(../iii/visual-turkey-aegean-mobile.jpg);
+  }
+  #site-wrap section .destinations-list .destination.turkey-aegean .visual:before {
+    content: '';
+    display: block;
+    padding-top: 143.46504559%;
+  }
+  #site-wrap section .destinations-list .destination.turkey-aegean .visual > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section .destinations-list .destination.turkey-izmir .visual {
+  position: relative;
+  background-image: url(../iii/visual-turkey-izmir-desktop.jpg);
+}
+#site-wrap section .destinations-list .destination.turkey-izmir .visual:before {
+  content: '';
+  display: block;
+  padding-top: 29.15451895%;
+}
+#site-wrap section .destinations-list .destination.turkey-izmir .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.turkey-izmir .visual {
+    position: relative;
+    background-image: url(../iii/visual-turkey-izmir-mobile.jpg);
+  }
+  #site-wrap section .destinations-list .destination.turkey-izmir .visual:before {
+    content: '';
+    display: block;
+    padding-top: 76.13981763%;
+  }
+  #site-wrap section .destinations-list .destination.turkey-izmir .visual > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section .destinations-list .destination.turkey-aqua-joy .visual {
+  background-image: url(../iii/visual-turkey-aqua-joy-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.turkey-aqua-joy .visual {
+    background-image: url(../iii/visual-turkey-aqua-joy-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.egypt .visual {
+  background-image: url(../iii/visual-egypt-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.egypt .visual {
+    background-image: url(../iii/visual-egypt-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.istanbul .visual {
+  background-image: url(../iii/visual-istanbul-2-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.istanbul .visual {
+    background-image: url(../iii/visual-istanbul-2-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.colombo .visual {
+  background-image: url(../iii/visual-colombo-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.colombo .visual {
+    background-image: url(../iii/visual-colombo-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.thailand .visual {
+  background-image: url(../iii/visual-thailand-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.thailand .visual {
+    background-image: url(../iii/visual-thailand-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.bahrain .visual {
+  background-image: url(../iii/visual-bahrain-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.bahrain .visual {
+    background-image: url(../iii/visual-bahrain-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.maldives .visual {
+  background-image: url(../iii/visual-maldives-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.maldives .visual {
+    background-image: url(../iii/visual-maldives-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.vietnam .visual {
+  background-image: url(../iii/visual-vietnam-desktop.jpg);
+  border-radius: 2.5em;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.vietnam .visual {
+    background-image: url(../iii/visual-vietnam-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.india .visual {
+  background-image: url(../iii/visual-india-desktop.jpg);
+  border-radius: 2.5em;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.india .visual {
+    background-image: url(../iii/visual-india-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.ar .visual {
+  background-image: url(../iii/visual-ar-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.ar .visual {
+    background-image: url(../iii/visual-ar-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.uz .visual {
+  background-image: url(../iii/visual-uz-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.uz .visual {
+    background-image: url(../iii/visual-uz-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.russia .visual {
+  background-image: url(../iii/visual-russia-3-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.russia .visual {
+    background-image: url(../iii/visual-russia-3-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.russia-pop-hotels .visual {
+  background-image: url(../iii/visual-russia-pop-hotels-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.russia-pop-hotels .visual {
+    background-image: url(../iii/visual-russia-pop-hotels-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.russia-black-sea .visual {
+  background-image: url(../iii/visual-russia-black-sea-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.russia-black-sea .visual {
+    background-image: url(../iii/visual-russia-black-sea-mobile.jpg);
+  }
+}
+#site-wrap section .destinations-list .destination.acc .visual {
+  position: relative;
+  background-image: url(../iii/visual-acc-desktop.jpg);
+}
+#site-wrap section .destinations-list .destination.acc .visual:before {
+  content: '';
+  display: block;
+  padding-top: 49.19825073%;
+}
+#site-wrap section .destinations-list .destination.acc .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.acc .visual {
+    position: relative;
+    background-image: url(../iii/visual-acc-mobile.jpg);
+  }
+  #site-wrap section .destinations-list .destination.acc .visual:before {
+    content: '';
+    display: block;
+    padding-top: 102.57142857%;
+  }
+  #site-wrap section .destinations-list .destination.acc .visual > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section .destinations-list .destination.offer-eb .visual {
+  position: relative;
+  background-image: url(../iii/visual-offer-eb-2-desktop.jpg);
+  border-radius: 15px;
+  overflow: hidden;
+}
+#site-wrap section .destinations-list .destination.offer-eb .visual:before {
+  content: '';
+  display: block;
+  padding-top: 26.27737226%;
+}
+#site-wrap section .destinations-list .destination.offer-eb .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.offer-eb .visual {
+    position: relative;
+    background-image: url(../iii/visual-offer-eb-2-mobile.jpg);
+  }
+  #site-wrap section .destinations-list .destination.offer-eb .visual:before {
+    content: '';
+    display: block;
+    padding-top: 163.71428571%;
+  }
+  #site-wrap section .destinations-list .destination.offer-eb .visual > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section .destinations-list .destination .visual {
+  width: 100%;
+}
+#site-wrap section .destinations-list .destination h3 {
+  margin: 0.75em auto;
+}
+#site-wrap section .destination-block {
+  position: relative;
+  background: center no-repeat;
+  background-size: cover;
+  margin-top: 2em;
+  border-radius: 2.5em;
+}
+#site-wrap section .destination-block:before {
+  content: '';
+  display: block;
+  padding-top: 29.15451895%;
+}
+#site-wrap section .destination-block > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block {
+    position: relative;
+    border-radius: 1.5em;
+  }
+  #site-wrap section .destination-block:before {
+    content: '';
+    display: block;
+    padding-top: 75.55555556%;
+  }
+  #site-wrap section .destination-block > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+#site-wrap section .destination-block.cis-az {
+  background-image: url(../iii/visual-cis-az-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block.cis-az {
+    background-image: url(../iii/visual-cis-az-mobile.jpg);
+  }
+}
+#site-wrap section .destination-block.cis-am {
+  background-image: url(../iii/visual-cis-am-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block.cis-am {
+    background-image: url(../iii/visual-cis-am-mobile.jpg);
+  }
+}
+#site-wrap section .destination-block.cis-uz {
+  background-image: url(../iii/visual-cis-uz-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block.cis-uz {
+    background-image: url(../iii/visual-cis-uz-mobile.jpg);
+  }
+}
+#site-wrap section .destination-block.cis-by {
+  background-image: url(../iii/visual-cis-by-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block.cis-by {
+    background-image: url(../iii/visual-cis-by-mobile.jpg);
+  }
+}
+#site-wrap section .destination-block > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 2.5% 7.5%;
+  font-size: 1.2vw;
+}
+#site-wrap section .destination-block > * > * {
+  max-width: 100%;
+}
+@media screen and (min-width: 1440px) {
+  #site-wrap section .destination-block > * {
+    font-size: 17.28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block > * {
+    padding: 7.5%;
+    font-size: 3vw;
+  }
+}
+#site-wrap section .destination-block > * h3 {
+  font-size: 2.5em;
+  margin: 0 0 0.5em 0 !important;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block > * h3 {
+    font-size: 3em;
+  }
+}
+#site-wrap section .destination-block > * h3.white {
+  color: white;
+}
+#site-wrap section .destination-block > * h3.black {
+  color: black;
+}
+#site-wrap section .destination-block > * .xlinks {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block > * .xlinks {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+#site-wrap section .destination-block > * .xlinks > *:nth-child(n+2) {
+  margin-left: 1em;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destination-block > * .xlinks > *:nth-child(n+2) {
+    margin-left: 0;
+    margin-top: 1em;
+  }
+}
+#site-wrap section .destination-block > * .xlinks .buttonlike {
+  font-size: 1em;
+}
+#site-wrap section .destination-block > * .xlinks .hollow {
+  background-color: white !important;
+}

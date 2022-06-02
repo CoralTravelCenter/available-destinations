@@ -1,0 +1,496 @@
+@import "../../common/css/common";
+
+#site-wrap {
+	background-color: white;
+	section {
+		> .contenu {
+
+		}
+
+		&.intro {
+			>.contenu {
+				.proportional(1372/456);
+				background: url("../iii/section-intro-8-desktop.jpg") center no-repeat;
+				background-size: cover;
+				padding: 0;
+				@media screen and (max-width: @mobile-breakpoint) {
+					.proportional(720/1162);
+					background-image: url(../iii/section-intro-8-mobile.jpg);
+				}
+			}
+		}
+
+		&.c2a {
+			margin-bottom: -3%;
+			@media screen and (max-width: @mobile-breakpoint) {
+				margin-bottom: -5%;
+			}
+			>.contenu {
+				align-items: center;
+				text-align: center;
+				p {
+					max-width: 50em;
+					margin-bottom: 0;
+					&.strong {
+						font-weight: bold;
+					}
+					& + p {
+						margin-top: 1em;
+					}
+				}
+			}
+		}
+
+		&.destinations {
+			>.contenu {
+				width: 100%;
+				.selector {
+					width: 100%;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					[data-show] {
+						.interactive;
+						cursor: pointer;
+						margin: .5em;
+						flex: 1 1 auto;
+						display: inline-flex;
+						justify-content: center;
+						align-items: center;
+						text-align: center;
+						line-height: 1;
+						height: 3em;
+						padding: 0 1em;
+						border-radius: .5em;
+						background-color: #BDBDBD;
+						color: white;
+						.transit(color);
+						.transit(background-color);
+						&.selected {
+							pointer-events: none;
+							background-color: #D7232A;
+							color: white;
+							@media screen and (max-width: @mobile-breakpoint) {
+							    pointer-events: auto;
+								background-color: #BDBDBD;
+								color: white;
+							}
+						}
+					}
+				}
+				.content-blocks {
+					width: 100%;
+					[data-content-for] {
+						@media screen and (min-width: (@mobile-breakpoint+1)) {
+							display: none;
+						}
+						@media screen and (max-width: @mobile-breakpoint) {
+							display: block!important;
+							&:nth-child(n+2) {
+								margin-top: 15%;
+							}
+						}
+					}
+					h2 {
+						max-width: none;
+						margin-top: 1em;
+						+ p {
+							font-size: 24/16em;
+							font-weight: normal;
+							text-align: center;
+							margin-top: -1em;
+							margin-bottom: 2em;
+						}
+					}
+					>* {
+
+					}
+				}
+			}
+		}
+
+		&.accomodation-only {
+			@media screen and (max-width: @mobile-breakpoint) {
+			    display: none;
+			}
+		}
+
+		&.message-us {
+			>.contenu {
+				.messengers {
+					display: flex;
+					justify-content: center;
+					margin-top: 2em;
+					//margin-bottom: 3em;
+					a {
+						.interactive;
+						.proportional(1/1);
+						width: 6em;
+						max-width: 80px;
+						background: center no-repeat;
+						background-size: contain;
+						margin: 0 1.5em;
+					}
+				}
+			}
+		}
+
+		&.offers {
+			background-color: #EFEFEF;
+			padding: 5% 0;
+			>.contenu {
+			.actions {
+				margin-top: 2em;
+				.flex-center;
+			}
+			}
+		}
+		
+
+		.destinations-list {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			&.one {
+				.destination {
+					flex: 1 0 100%;
+					&:nth-child(n+2) {
+						margin-top: 2em;
+					}
+					.visual {
+						.proportional(1372/400);
+						background: center no-repeat;
+						background-size: cover;
+						@media screen and (max-width: @mobile-breakpoint) {
+							.proportional(658/500);
+						}
+					}
+				}
+			}
+			&.two {
+				.destination {
+					width: 100%/2;
+					@media screen and (max-width: @mobile-breakpoint) {
+						width: 100%;
+						&:nth-child(n+2) {
+							margin-top: 2em;
+						}
+					}
+					.visual {
+						.proportional(700/340);
+						background: center no-repeat;
+						background-size: cover;
+					}
+				}
+			}
+			&.three {
+				.destination {
+					width: 100%/3;
+					@media screen and (max-width: @mobile-breakpoint) {
+						width: 100%;
+						&:nth-child(n+2) {
+							margin-top: 2em;
+						}
+					}
+					.visual {
+						.proportional(700/532);
+						background: center no-repeat;
+						background-size: cover;
+					}
+				}
+			}
+			&.four {
+				.destination {
+					width: 100%/4;
+					@media screen and (max-width: @mobile-breakpoint) {
+						width: 50%;
+						&:nth-child(n+3) {
+							margin-top: 2em;
+						}
+					}
+					.visual {
+						.proportional(400/300);
+						background: center no-repeat;
+						background-size: cover;
+					}
+				}
+			}
+			.destination {
+				.flex-column;
+				align-items: center;
+				text-align: center;
+				padding: .5em;
+				color: inherit;
+				&.antalia {
+					.visual {
+						background-image: url(../iii/visual-antalia-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-antalia-mobile.jpg);
+						}
+					}
+				}
+				&.turkey {
+					.visual {
+						.proportional(1372/400);
+						background-image: url(../iii/visual-turkey-3-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							.proportional(658/944);
+							background-image: url(../iii/visual-turkey-3-mobile.jpg);
+						}
+					}
+				}
+				&.turkey-aegean {
+					.visual {
+						.proportional(1372/400);
+						background-image: url(../iii/visual-turkey-aegean-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							.proportional(658/944);
+							background-image: url(../iii/visual-turkey-aegean-mobile.jpg);
+						}
+					}
+				}
+				&.turkey-izmir {
+					.visual {
+						.proportional(1372/400);
+						background-image: url(../iii/visual-turkey-izmir-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							.proportional(658/501);
+							background-image: url(../iii/visual-turkey-izmir-mobile.jpg);
+						}
+					}
+				}
+				&.turkey-aqua-joy {
+					.visual {
+						background-image: url(../iii/visual-turkey-aqua-joy-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-turkey-aqua-joy-mobile.jpg);
+						}
+					}
+				}
+				&.egypt {
+					.visual {
+						background-image: url(../iii/visual-egypt-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-egypt-mobile.jpg);
+						}
+					}
+				}
+				&.istanbul {
+					.visual {
+						background-image: url(../iii/visual-istanbul-2-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-istanbul-2-mobile.jpg);
+						}
+					}
+				}
+				&.colombo {
+					.visual {
+						background-image: url(../iii/visual-colombo-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-colombo-mobile.jpg);
+						}
+					}
+				}
+				&.thailand {
+					.visual {
+						background-image: url(../iii/visual-thailand-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-thailand-mobile.jpg);
+						}
+					}
+				}
+				&.bahrain {
+					.visual {
+						background-image: url(../iii/visual-bahrain-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-bahrain-mobile.jpg);
+						}
+					}
+				}
+				&.maldives {
+					.visual {
+						background-image: url(../iii/visual-maldives-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-maldives-mobile.jpg);
+						}
+					}
+				}
+				&.vietnam {
+					.visual {
+						background-image: url(../iii/visual-vietnam-desktop.jpg);
+						border-radius: 2.5em;
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-vietnam-mobile.jpg);
+						}
+					}
+				}
+				&.india {
+					.visual {
+						background-image: url(../iii/visual-india-desktop.jpg);
+						border-radius: 2.5em;
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-india-mobile.jpg);
+						}
+					}
+				}
+				&.ar {
+					.visual {
+						background-image: url(../iii/visual-ar-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-ar-mobile.jpg);
+						}
+					}
+				}
+				&.uz {
+					.visual {
+						background-image: url(../iii/visual-uz-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-uz-mobile.jpg);
+						}
+					}
+				}
+				&.russia {
+					.visual {
+						background-image: url(../iii/visual-russia-3-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-russia-3-mobile.jpg);
+						}
+					}
+				}
+				&.russia-pop-hotels {
+					.visual {
+						background-image: url(../iii/visual-russia-pop-hotels-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-russia-pop-hotels-mobile.jpg);
+						}
+					}
+				}
+				&.russia-black-sea {
+					.visual {
+						background-image: url(../iii/visual-russia-black-sea-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							background-image: url(../iii/visual-russia-black-sea-mobile.jpg);
+						}
+					}
+				}
+				&.acc {
+					.visual {
+						.proportional(1372/675);
+						background-image: url(../iii/visual-acc-desktop.jpg);
+						@media screen and (max-width: @mobile-breakpoint) {
+							.proportional(700/718);
+							background-image: url(../iii/visual-acc-mobile.jpg);
+						}
+					}
+				}
+				&.offer-eb {
+					.visual {
+						.proportional(1370/360);
+						background-image: url(../iii/visual-offer-eb-2-desktop.jpg);
+						border-radius: 15px;
+						overflow: hidden;
+						@media screen and (max-width: @mobile-breakpoint) {
+							.proportional(700/1146);
+							background-image: url(../iii/visual-offer-eb-2-mobile.jpg);
+						}
+					}
+				}
+				.visual {
+					width: 100%;
+				}
+				h3 {
+					margin: .75em auto;
+				}
+			}
+		}
+
+		.destination-block {
+			.proportional(1372/400);
+			background: center no-repeat;
+			background-size: cover;
+			margin-top: 2em;
+			border-radius: 2.5em;
+			@media screen and (max-width: @mobile-breakpoint) {
+			    .proportional(720/544);
+				border-radius: 1.5em;
+			}
+			&.cis-az {
+				background-image: url(../iii/visual-cis-az-desktop.jpg);
+				@media screen and (max-width: @mobile-breakpoint) {
+					background-image: url(../iii/visual-cis-az-mobile.jpg);
+				}
+			}
+			&.cis-am {
+				background-image: url(../iii/visual-cis-am-desktop.jpg);
+				@media screen and (max-width: @mobile-breakpoint) {
+					background-image: url(../iii/visual-cis-am-mobile.jpg);
+				}
+			}
+			&.cis-uz {
+				background-image: url(../iii/visual-cis-uz-desktop.jpg);
+				@media screen and (max-width: @mobile-breakpoint) {
+					background-image: url(../iii/visual-cis-uz-mobile.jpg);
+				}
+			}
+			&.cis-by {
+				background-image: url(../iii/visual-cis-by-desktop.jpg);
+				@media screen and (max-width: @mobile-breakpoint) {
+					background-image: url(../iii/visual-cis-by-mobile.jpg);
+				}
+			}
+			> * {
+				.flex-column;
+				justify-content: flex-end;
+				align-items: flex-start;
+				padding: 2.5% 7.5%;
+				.fluid-fontsize(1.2vw);
+				@media screen and (max-width: @mobile-breakpoint) {
+					padding: 7.5%;
+					font-size: 3vw;
+				}
+
+				h3 {
+					font-size: 2.5em;
+					margin: 0 0 .5em 0 !important;
+					@media screen and (max-width: @mobile-breakpoint) {
+						font-size: 3em;
+					}
+
+					&.white {
+						color: white;
+					}
+
+					&.black {
+						color: black;
+					}
+				}
+
+				.xlinks {
+					display: flex;
+					@media screen and (max-width: @mobile-breakpoint) {
+						flex-direction: column;
+						align-items: stretch;
+					}
+
+					> *:nth-child(n+2) {
+						margin-left: 1em;
+						@media screen and (max-width: @mobile-breakpoint) {
+							margin-left: 0;
+							margin-top: 1em;
+						}
+					}
+
+					.buttonlike {
+						font-size: 1em;
+					}
+
+					.hollow {
+						background-color: white !important;
+					}
+				}
+			}
+		}
+
+
+	}
+}
