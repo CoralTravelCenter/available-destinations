@@ -625,7 +625,7 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 }
 #site-wrap section .destinations-list .destination.turkey-izmir .visual {
   position: relative;
-  background-image: url(../iii/visual-turkey-izmir-desktop.jpg);
+  background-image: url(../iii/visual-turkey-izmir-02-desktop.jpg);
 }
 #site-wrap section .destinations-list .destination.turkey-izmir .visual:before {
   content: '';
@@ -642,7 +642,7 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 @media screen and (max-width: 768px) {
   #site-wrap section .destinations-list .destination.turkey-izmir .visual {
     position: relative;
-    background-image: url(../iii/visual-turkey-izmir-mobile.jpg);
+    background-image: url(../iii/visual-turkey-izmir-02-mobile.jpg);
   }
   #site-wrap section .destinations-list .destination.turkey-izmir .visual:before {
     content: '';
