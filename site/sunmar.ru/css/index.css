@@ -221,14 +221,14 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 }
 #site-wrap section.intro > .contenu {
   position: relative;
-  background: url("../iii/section-intro-8-desktop.jpg") center no-repeat;
+  background: url("../iii/section-intro-9-desktop.jpg") center no-repeat;
   background-size: cover;
   padding: 0;
 }
 #site-wrap section.intro > .contenu:before {
   content: '';
   display: block;
-  padding-top: 33.2361516%;
+  padding-top: 37.95620438%;
 }
 #site-wrap section.intro > .contenu > * {
   position: absolute;
@@ -240,12 +240,12 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
 @media screen and (max-width: 768px) {
   #site-wrap section.intro > .contenu {
     position: relative;
-    background-image: url(../iii/section-intro-8-mobile.jpg);
+    background-image: url(../iii/section-intro-9-mobile.jpg);
   }
   #site-wrap section.intro > .contenu:before {
     content: '';
     display: block;
-    padding-top: 161.38888889%;
+    padding-top: 124.02777778%;
   }
   #site-wrap section.intro > .contenu > * {
     position: absolute;
