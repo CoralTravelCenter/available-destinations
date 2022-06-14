@@ -681,6 +681,14 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
     background-image: url(../iii/visual-istanbul-2-mobile.jpg);
   }
 }
+#site-wrap section .destinations-list .destination.how2pay .visual {
+  background-image: url(../iii/visual-how2pay-desktop.jpg);
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.how2pay .visual {
+    background-image: url(../iii/visual-how2pay-mobile.jpg);
+  }
+}
 #site-wrap section .destinations-list .destination.colombo .visual {
   background-image: url(../iii/visual-colombo-desktop.jpg);
 }
