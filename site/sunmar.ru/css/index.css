@@ -755,6 +755,40 @@ body > div.contentLayout-BaseContainer > div.notcritical > div > div:nth-child(2
     background-image: url(../iii/visual-uz-mobile.jpg);
   }
 }
+#site-wrap section .destinations-list .destination.russia-main .visual {
+  position: relative;
+  background-image: url(../iii/visual-russia-main-desktop.jpg);
+}
+#site-wrap section .destinations-list .destination.russia-main .visual:before {
+  content: '';
+  display: block;
+  padding-top: 28.86297376%;
+}
+#site-wrap section .destinations-list .destination.russia-main .visual > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  #site-wrap section .destinations-list .destination.russia-main .visual {
+    position: relative;
+    background-image: url(../iii/visual-russia-main-mobile.jpg);
+  }
+  #site-wrap section .destinations-list .destination.russia-main .visual:before {
+    content: '';
+    display: block;
+    padding-top: 75.98784195%;
+  }
+  #site-wrap section .destinations-list .destination.russia-main .visual > * {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 #site-wrap section .destinations-list .destination.russia .visual {
   background-image: url(../iii/visual-russia-3-desktop.jpg);
 }
