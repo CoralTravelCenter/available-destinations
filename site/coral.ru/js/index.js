@@ -130,6 +130,9 @@ ASAP(function() {
       });
     });
   });
+  if (document.referrer === 'https://www.coral.ru/' && !queryParam()['banner_on_site']) {
+    $('[data-show="uae"]').addClass('selected').siblings('.selected').removeClass('selected');
+  }
   showCardWithSelector = function($sel, clicked) {
     var $el2show, content_marker, idx;
     $sel.addClass('selected').siblings('.selected').removeClass('selected');
