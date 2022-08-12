@@ -62,7 +62,7 @@ ASAP ->
             $(window).scrollTo $(this).data('scrollto'), 500, margin: true, offset: -50
 
     if document.referrer == 'https://www.coral.ru/' and !queryParam()['banner_on_site']
-        $('[data-show="uae"]').addClass('selected').siblings('.selected').removeClass('selected')
+        $('[data-show="egypt"]').addClass('selected').siblings('.selected').removeClass('selected')
 
     showCardWithSelector = ($sel, clicked) ->
         $sel.addClass('selected').siblings('.selected').removeClass('selected')
